@@ -21,6 +21,8 @@ public class BaseTest {
 
     protected ContextMenuPage contextMenuPage;
 
+    protected AuthenticationAlertPage authenticationAlertPage;
+
     protected Actions actions;
 
     @Before
@@ -37,6 +39,7 @@ public class BaseTest {
         checkboxPage = new CheckboxPage(driver);
         contextMenuPage = new ContextMenuPage(driver);
         actions = new Actions(driver);
+        authenticationAlertPage = new AuthenticationAlertPage(driver);
 
 
     }
